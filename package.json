@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/calebpeterson/prescript.git"
   },
-  "version": "1.0.0",
+  "version": "2.0.1",
   "engines": {
     "vscode": "^1.53.0"
   },
@@ -15,7 +15,9 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:prescript.execute"
+    "onCommand:prescript.execute",
+    "onCommand:prescript.executeInBackground",
+    "onCommand:prescript.executeIntoDocument"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -23,6 +25,14 @@
       {
         "command": "prescript.execute",
         "title": "Prescript: Execute"
+      },
+      {
+        "command": "prescript.executeInBackground",
+        "title": "Prescript: Execute In Background"
+      },
+      {
+        "command": "prescript.executeIntoDocument",
+        "title": "Prescript: Execute Into Document"
       }
     ]
   },
